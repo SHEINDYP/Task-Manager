@@ -1,0 +1,73 @@
+<!-- <div class="stepper">
+  <mat-stepper #stepper>
+    <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Fill out your name</ng-template>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <p>Go to a different step to see the error state</p>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required.">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Fill out your address</ng-template>
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl"
+                 required>
+        </mat-form-field>
+        <div>
+          <p>Go to a different step to see the error state</p>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+  
+</div> -->
+
+
+
+<div class="main">
+
+  <h1 style="text-align: center;">Add New Employee</h1>
+  <mat-chip-listbox #chipList aria-label="Fish selection">
+    <mat-chip *ngFor="let language of languages" [value]="language" (click)="onSelectionLanguage(language)">
+      <div *ngIf="selectedLanguages.includes(language); else regularStyle" [ngStyle]="{'color': '#F86F03'}">
+        {{ language }}
+      </div>
+      <ng-template #regularStyle>
+        {{ language }}
+      </ng-template>
+    </mat-chip>
+  </mat-chip-listbox>
+
+  <div>
+    <form [formGroup]="newEmployeeForm" action="#">
+      <input name="firstName" type="text" class="feedback-input" placeholder="First Name" formControlName="FirstName" />
+      <input name="lastName" type="text" class="feedback-input" placeholder="Last Name" formControlName="LastName" />
+      <input name="email" type="email" class="feedback-input" placeholder="Email" formControlName="Email" />
+      <input name="Password" type="text" class="feedback-input" placeholder="Password" formControlName="Password" />
+
+      <input name="experience" type="number" class="feedback-input" placeholder="Experience"
+        formControlName="Experience" />
+      <input name="status" type="number" class="feedback-input" placeholder="Status" formControlName="Status" />
+
+      <button type="submit" (click)="AddNewEmployee()">Add</button>
+    </form>
+  </div>
+</div>

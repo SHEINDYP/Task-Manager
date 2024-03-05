@@ -1,0 +1,29 @@
+<div class="main">
+
+    <h1 style="text-align: center;">ADD NEW TASK</h1>
+    <div>
+        <mat-chip-listbox #chipList aria-label="Fish selection">
+            <mat-chip *ngFor="let language of languages" [value]="language" (click)="onSelectionLanguage(language)">
+                <div *ngIf="selectedLanguage==language;else regularStyle" [ngStyle]="{'color': '#F86F03'}">
+                    {{ language }}
+                </div>
+                <ng-template #regularStyle>
+                    {{ language }}
+                </ng-template>
+            </mat-chip>
+        </mat-chip-listbox>
+    </div>
+
+    <div>
+        <form [formGroup]="newTaskForm" action="#">
+            <input name="title" type="text" class="feedback-input" placeholder="Title" formControlName="Title" />
+            <input name="level" type="number" class="feedback-input" placeholder="Task Level" formControlName="Level" />
+            <input name="deadLine" type="date" class="feedback-input" placeholder="Dead-Line"
+                formControlName="DeadLine" />
+            <textarea name="description" class="feedback-input" placeholder="Description"
+                formControlName="Description"></textarea>
+            <button type="submit" (click)="addNewTask()">Send To Scheduling</button>
+        </form>
+    </div>
+
+</div>

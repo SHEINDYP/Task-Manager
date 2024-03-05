@@ -1,0 +1,60 @@
+<mat-toolbar style="background-color: orange;">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span style="padding-left: 30%;">HI, {{name}}</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <button  (click)="createNewEmployee()">add new task</button><br>
+        <button (click)="createNewTask()">add new employee</button><br>
+        
+        <!-- <li class="menu-item sub-menu">
+            <a href="#">
+               <span class="menu-icon">
+                  <i class="ri-global-fill"></i>
+               </span>
+               <span class="menu-title">Maps</span>
+            </a>
+            <div class="sub-menu-list">
+               <ul>
+                  <li class="menu-item">
+                     <a href="#">
+                        <span class="menu-title">Google maps</span>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="#">
+                        <span class="menu-title">Open street map</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </li> -->
+
+        <a href="#" ><mat-icon class="icon-drawer">person_add</mat-icon>All Tasks</a><br>
+        <a href="#" style="text-align: left;"><mat-icon>person_add</mat-icon>Tasks To test</a><br>
+        <a href="#" style="text-align: left;"><mat-icon>person_add</mat-icon>Tasks perfect</a><br>
+        <a href="#"><mat-icon>person_add</mat-icon>Tasks No Finish</a><br>
+    </mat-drawer>
+    <div> <!-- class="btn-add" -->
+        <button mat-fab class="add-employee" (click)="createNewEmployee()">
+            <mat-icon>person_add</mat-icon>
+            <!-- <i class="fa-solid fa-user-plus"></i> -->
+        </button>
+        <button mat-fab class="add-task" (click)="createNewTask()">
+            <span class="material-icons" >add_task</span>
+        </button>
+    </div>
+</mat-drawer-container>
+<router-outlet></router-outlet>

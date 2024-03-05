@@ -1,0 +1,51 @@
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+D:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Service.deps.json
+D:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Service.dll
+D:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Service.pdb
+D:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Common.dll
+D:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Repository.dll
+D:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Common.pdb
+D:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Repository.pdb
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.dll
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\refint\Service.dll
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.pdb
+D:\שנה ב\C#\Project\Service\obj\Debug\net6.0\ref\Service.dll
+E:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Service.deps.json
+E:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Service.dll
+E:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Service.pdb
+E:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Common.dll
+E:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Repository.dll
+E:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Common.pdb
+E:\שנה ב\C#\Project\Service\bin\Debug\net6.0\Repository.pdb
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.dll
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\refint\Service.dll
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\Service.pdb
+E:\שנה ב\C#\Project\Service\obj\Debug\net6.0\ref\Service.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\bin\Debug\net6.0\Service.deps.json
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\bin\Debug\net6.0\Service.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\bin\Debug\net6.0\Service.pdb
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\bin\Debug\net6.0\Common.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\bin\Debug\net6.0\Repository.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\bin\Debug\net6.0\Common.pdb
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\bin\Debug\net6.0\Repository.pdb
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\refint\Service.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\Service.pdb
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Service\obj\Debug\net6.0\ref\Service.dll

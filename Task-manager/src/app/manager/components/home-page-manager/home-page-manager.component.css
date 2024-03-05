@@ -1,0 +1,104 @@
+/* -----TOOL BAR----- */
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+/* -----SIDE BAR----- */
+.container {
+    /* width: 500px; */
+    height: 550px;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  }
+  
+  .example-sidenav-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .example-sidenav{
+    width: 20%;
+
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  .btn-add{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+.add-task {
+    color: black; 
+    background-color: orange;
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+    cursor: pointer;
+  }
+  .add-employee{
+    color: black; 
+    background-color: orange;
+    position: absolute;
+    bottom: 90px;
+    right: 12px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .add-task {
+      position: fixed;
+      bottom: 20px;
+      right: 12px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .add-employee {
+      position: fixed;
+      bottom: 90px;
+      right: 12px;
+    }
+  }
+
+  /* ------------------------- */
+  
+/* כאן יש קוד CSS להוספת עיצוב לרישורים בתוך ה־<mat-drawer>:
+
+css
+Copy code */
+/* סגנון כללי לקישורים */
+mat-drawer a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+/* סגנון לכאשר עוברים על הקישור */
+mat-drawer a:hover {
+    background-color: #f0f0f0;
+}
+
+/* סגנון לאייקונים */
+mat-drawer a::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.icon-drawer {
+  padding-right: 50px; /* מרווח קטן בין האייקון לטקסט */
+}
+
+
+
+
+      
+
+

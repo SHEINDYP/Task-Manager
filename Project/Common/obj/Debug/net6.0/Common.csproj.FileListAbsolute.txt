@@ -1,0 +1,45 @@
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+D:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Common.deps.json
+D:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Common.dll
+D:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Common.pdb
+D:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Repository.dll
+D:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Repository.pdb
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.csproj.CopyComplete
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.dll
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\refint\Common.dll
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.pdb
+D:\שנה ב\C#\Project\Common\obj\Debug\net6.0\ref\Common.dll
+E:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Common.deps.json
+E:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Common.dll
+E:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Common.pdb
+E:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Repository.dll
+E:\שנה ב\C#\Project\Common\bin\Debug\net6.0\Repository.pdb
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.csproj.CopyComplete
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.dll
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\refint\Common.dll
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\Common.pdb
+E:\שנה ב\C#\Project\Common\obj\Debug\net6.0\ref\Common.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\bin\Debug\net6.0\Common.deps.json
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\bin\Debug\net6.0\Common.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\bin\Debug\net6.0\Common.pdb
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\bin\Debug\net6.0\Repository.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\bin\Debug\net6.0\Repository.pdb
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.csproj.CopyComplete
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\refint\Common.dll
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\Common.pdb
+C:\Users\user\Pictures\אא כל התיקיות\תכנות\שנה ב\c#\Project\Common\obj\Debug\net6.0\ref\Common.dll
