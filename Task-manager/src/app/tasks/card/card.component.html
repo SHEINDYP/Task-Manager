@@ -1,0 +1,21 @@
+<div class='task'>
+  <div>
+    <div class='task__stats_title'>{{ languageName }}</div>
+    <h2>{{ taskDetail.title }}</h2>
+
+    <h3>Dade-Line: {{ taskDetail.deadLine | date:'dd/MM/yyyy' }}</h3>
+  </div>
+  <p>{{ taskDetail.description }}</p>
+  <div class='task__stats'>
+    <button (click)="updateStatus('1')">
+      <img style="width: 20px;" src="../../../assets/images/time.png">
+    </button>
+    <button (click)="updateStatus('2')">
+      <img style="width: 20px;" src="../../../assets/images/check.png">
+    </button>
+    <button (click)="updateStatus('3')">
+      <img style="width: 20px;" src="../../../assets/images/like.png">
+    </button>
+    <app-update-card *ngIf="updateCard" [update]="taskDetail"></app-update-card>
+  </div>
+</div>

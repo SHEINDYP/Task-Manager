@@ -1,0 +1,52 @@
+<div class="main">
+
+    <h1 style="text-align: center;">ADD NEW TASK</h1>
+    <div>
+        <mat-chip-listbox #chipList aria-label="Fish selection">
+            <mat-chip *ngFor="let language of languages" [value]="language" (click)="onSelectionLanguage(language)">
+                <div *ngIf="selectedLanguage==language;else regularStyle" [ngStyle]="{'color': '#F86F03'}">
+                    {{ language }}
+                </div>
+                <ng-template #regularStyle>
+                    {{ language }}
+                </ng-template>
+            </mat-chip>
+
+        </mat-chip-listbox>
+        <p class="errors" *ngIf="selectedLanguage==null">*Please chose language</p>
+    </div>
+
+    <div>
+        <form [formGroup]="newTaskForm" (ngSubmit)="addNewTask()">
+
+            <input name="title" type="text" class="feedback-input" placeholder="Title" formControlName="title" />
+            <div *ngIf="newTaskForm.invalid && (newTaskForm.dirty || newTaskForm.touched)" class="mat-error">
+                <div class="errors" *ngIf="newTaskForm.controls['title'].errors?.['required']">*Title is required</div>
+                <div class="errors" *ngIf="newTaskForm.controls['title'].errors?.['pattern']">
+                    *Title must be at least 3 character</div>
+            </div>
+
+            <input name="level" type="number" class="feedback-input" placeholder="Level   0-10"
+                formControlName="level" />
+            <div *ngIf="newTaskForm.invalid && (newTaskForm.dirty || newTaskForm.touched)" class="mat-error">
+                <div class="errors" *ngIf="newTaskForm.controls['level'].errors?.['required']">*Level is required</div>
+                <div class="errors"
+                    *ngIf="newTaskForm.controls['level'].errors?.['min'] || newTaskForm.controls['level'].errors?.['max']">
+                    *Level must be between 0 and 10</div>
+            </div>
+
+            <input name="deadLine" type="date" class="feedback-input" placeholder="Dead-Line"
+                formControlName="deadLine" />
+            <textarea name="description" class="feedback-input" placeholder="Description"
+                formControlName="description"></textarea>
+            <div *ngIf="newTaskForm.invalid && (newTaskForm.dirty || newTaskForm.touched)" class="mat-error">
+                <div class="errors" *ngIf="newTaskForm.controls['description'].errors?.['required']">*Description is
+                    required</div>
+                <div class="errors" *ngIf="newTaskForm.controls['description'].errors?.['pattern']">
+                    *Description must be at least 3 character</div>
+            </div>
+            <button type="submit" [disabled]="newTaskForm.invalid">Send To Scheduling</button>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="forms-container">
+        <div class="signin-signup">
+            <form action="#" class="sign-in-form" [formGroup]="loginEmployee">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <img src="../../../../assets/images/mail.png">
+                    <input name="email" type="email" class="feedback-input" placeholder="Email"
+                        formControlName="Email" />
+
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" formControlName="Password" />
+                </div>
+                <button type="submit" value="Login" class="btn solid" (click)="login()">Login</button>
+                <p class="social-text">Or Sign in with social platforms</p>
+                <ul class="social-media">
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="panels-container" style="scrollbar-width: 00px;">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>New to our community ?</h3>
+                <p>
+                    Discover a world of possibilities! Join us and explore a vibrant
+                    community where ideas flourish and connections thrive.
+                </p>
+                <button class="btn transparent" id="sign-up-btn" (click)="goToSignUp()">
+                    Sign up
+                </button>
+            </div>
+            <img src="https://i.ibb.co/6HXL6q1/Privacy-policy-rafiki.png" class="image" alt="" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,110 @@
+/* -----TOOL BAR----- */
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+/* -----SIDE BAR----- */
+.container {
+    /* width: 500px; */
+    height: 550px;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  }
+  
+  .example-sidenav-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 166, 0, 0.563);
+  }
+  .example-sidenav{
+    width: 20%;
+
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  .example-sidenav {
+    width: 250px; /* רוחב צפוף */
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px; /* מרווחים פנימיים */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #f0f0f0; /* צבע רקע כאשר עוברים על הכפתור */
+}
+
+.menu-icon {
+    margin-right: 8px; /* רווח מימין לאייקון */
+}
+
+.menu-label {
+    flex-grow: 1; /* מתיחה של הטקסט כדי שימלא את השטח */
+}
+
+.logo{
+    font-family:'Roboto', sans-serif;  /* בחירת גופן */
+    font-weight: bold; 
+    font-size: 28px; /* הגדרת גודל הפונט */
+    font-family: 'Poppins', sans-serif;
+}
+
+.user{
+  font-family:'Roboto', sans-serif;  /* בחירת גופן */
+  /* font-weight: bold;  */
+  font-size: 20px; /* הגדרת גודל הפונט */
+  font-family: 'Poppins', sans-serif;
+  padding-left: 23%;
+}
+
+/* __________________________________________ */
+.div-container {
+  position: relative;
+  bottom: 20px;
+  /* כאן תוכלי להתאים את המרחק מהתחתית בהתאם לצורך */
+  right: 20px;
+  /* כאן תוכלי להתאים את המרחק מהצד בהתאם לצורך */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.add-vacation {
+  color: black;
+  background-color: orange;
+  position: fixed;
+  bottom: 40px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.add-task {
+  color: black; 
+  background-color: orange;
+  position:fixed;
+  bottom: 20px;
+  right: 12px;
+  cursor: pointer;
+}
+.add-employee{
+  color: black; 
+  background-color: orange;
+  position:fixed;
+  bottom: 90px;
+  right: 12px;
+  cursor: pointer;
+}
+
+
+

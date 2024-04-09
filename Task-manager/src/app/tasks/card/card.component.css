@@ -1,0 +1,377 @@
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: none;
+    overflow-x: none;
+  }
+  
+  body {
+    color: #2e2e2f;
+  }
+  
+  .app {
+    /* background-color:  #ebf0f7; */
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  .project {
+    padding: 2rem;
+    max-width: 75%;
+    width: 100%;
+    display: inline-block;
+    margin-left: 10rem;
+  }
+  
+  .project-info {
+    padding: 2rem 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-participants {
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-participants span,
+  .project-participants__add {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 .2rem;
+  }
+  
+  .project-participants__add {
+    background: transparent;
+    border: 1px dashed rgb(150, 150, 150);
+    font-size: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .project-participants__add:after {
+    content: '+';
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+  }
+  
+  .project-tasks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    grid-column-gap: 1.5rem;
+  }
+  
+  .project-column-heading {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .project-column-heading__title {
+    font-size: 20px;
+  }
+  
+  .project-column-heading__options {
+    background: transparent;
+    color: #c4cad3;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .task {
+    /* cursor: pointer; */
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    margin-bottom: 1rem;
+    border: 1px solid #2e2e2f;
+
+  }
+
+  .task_description {
+    word-wrap: break-word; /* מנע מהמילים להחליק מחוץ לתיאור המשימה */
+    overflow-wrap: break-word; /* טיפול בתמיכת דפדפנים ישנים */
+  }
+  
+  .task:hover {
+    box-shadow:rgba(99, 99, 99, 0.5) 0px 5px 15px 0px; 
+    /* transform: scale(1.005); */
+  }
+
+  
+  .task p {
+    font-size: 15px;
+    margin: 1.2rem 0;
+  }
+  
+  .task__tag {
+    border-radius: 100px;
+    padding: 2px 13px;
+    font-size: 12px;
+  }
+  
+  
+  .task__tags {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .task__options {
+    background: transparent;
+    border: 0;
+    color: #c4cad3;
+    font-size: 17px;
+  }
+  
+  .task__stats {
+    position: relative;
+    width: 100%;
+    color: #c4cad3;
+    font-size: 12px;
+  }
+  
+  .task__stats_title {
+    position: relative;
+    width: 100%;
+    color: orange;
+    font-size: 15px;
+    font-weight: 1000;
+    /* text-align: right; */
+    padding-left: 80%;
+    background-color: #97cddb;
+  }
+
+  .task__stats span:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+  
+  .task__stats svg {
+    margin-right: 5px;
+  }
+  
+  .task__owner {
+    width: 25px;
+    height: 25px;
+    border-radius: 100rem;
+    background: #7784ee;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .task-hover {
+    border: 3px dashed #c4cad3 !important;
+  }
+  
+  .task-details {
+    width: 24%;
+    border-left: 1px solid #d9e0e9;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding: 3rem 2rem;
+  }
+  
+  .tag-progress {
+    margin: 1.5rem 0;
+  }
+  
+  .tag-progress h2 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .tag-progress p {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .progress {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    height: 10px;
+  }
+  
+  .progress::-webkit-progress-bar,
+  .progress::-webkit-progress-value {
+    border-radius: 10px;
+  }
+  
+  .progress--copyright::-webkit-progress-bar {
+    background-color: #ecd8e6;
+  }
+  
+  .progress--copyright::-webkit-progress-value {
+    background: #d459e8;
+  }
+  
+  .progress--illustration::-webkit-progress-bar {
+    background-color: #dee7e3;
+  }
+  
+  .progress--illustration::-webkit-progress-value {
+    background-color: #46bd84;
+  }
+  
+  .progress--design::-webkit-progress-bar {
+    background-color: #d8e7f4;
+  }
+  
+  .progress--design::-webkit-progress-value {
+    background-color: #08a0f7;
+  }
+  
+  .task-activity {
+    margin: 1.5rem 0;
+  }
+  
+  .task-activity h2 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .task-activity li {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0rem 1rem 1rem 3rem;
+    position: relative;
+  }
+  
+  .task-activity time {
+    display: block;
+    color: #c4cad3;
+  }
+  
+  .task-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .task-icon svg {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  
+  .task-icon--attachment {
+    background-color: #fba63c;
+  }
+  
+  .task-icon--comment {
+    background-color: #5dc983;
+  }
+  
+  .task-icon--edit {
+    background-color: #7784ee;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .project {
+      max-width: 100%;
+    }
+  
+    .task-details {
+      width: 100%;
+      display: flex;
+    }
+  
+    .tag-progress,
+    .task-activity {
+      flex-basis: 50%;
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .project-column:nth-child(2),
+    .project-column:nth-child(3) {
+      display: none;
+    }
+  
+    .project-tasks {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .project-column:nth-child(4) {
+      display: none;
+    }
+  
+    .project-tasks {
+      grid-template-columns: 1fr;
+    }
+  
+    .task-details {
+      flex-wrap: wrap;
+      padding: 3rem 1rem;
+    }
+  
+    .tag-progress,
+    .task-activity {
+      flex-basis: 100%;
+    }
+  
+    h1 {
+      font-size: 25px;
+    }
+  }
+  
+
+.task__stats {
+  display: flex;
+  align-items: center; /* למרכז פנימה */
+  justify-content: center; align-items: center;
+}
+
+.task__stats button {
+  margin-right: 10px; /* מרווח בין הכפתורים */
+  border: none; /* מסיר גבולות */
+  border-radius: 50%; /* עיגול קצוות לכפתור */
+  padding: 6px; /* גודל הכפתור */
+  cursor: pointer; /* משנה את הסמן לסמן יד */
+}
+
+.task__stats button:first-child {
+  background-color: #ffcc00; /* צבע רקע של הכפתור הראשון */
+}
+
+.task__stats button:nth-child(2) {
+  background-color: #00ccff; /* צבע רקע של הכפתור השני */
+}
+
+.task__stats button:last-child {
+  background-color: #66ff66; /* צבע רקע של הכפתור האחרון */
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+

@@ -1,0 +1,69 @@
+<div class="main">
+
+  <h1 style="text-align: center;">Add New Employee</h1>
+  <mat-chip-listbox #chipList>
+    <mat-chip *ngFor="let language of languages" [value]="language" (click)="onSelectionLanguage(language)">
+      <div *ngIf="temp_select_language(language); else regularStyle" [ngStyle]="{'color': '#F86F03'}">
+        {{ language }}
+      </div>
+      <ng-template #regularStyle>
+        {{ language }}
+      </ng-template>
+    </mat-chip>
+  </mat-chip-listbox>
+  <p class="p1" *ngIf="selectedLanguages.length!=0">Enter level of language: </p>
+  <div *ngFor="let language of languages">
+
+    <div *ngIf="temp_select_language(language)">
+      <input [(ngModel)]="level_lan" type="number" name="level" class="level-lan-input" placeholder="{{language}}"
+        (ngModelChange)="onEnterLevel(language,$event)" min="0" max="10">
+      <p class="errors" *ngIf="level_lan < 0 || level_lan > 10">*Please enter a number between 0 and 10</p>
+    </div>
+  </div>
+  <p class="errors" *ngIf="selectedLanguages.length===0">*Please chose language/s</p>
+
+  <form [formGroup]="newEmployeeForm" (ngSubmit)="AddNewEmployee()">
+    <input name="firstName" type="text" class="feedback-input" placeholder="First Name" formControlName="FirstName" />
+    <div *ngIf="newEmployeeForm.invalid && (newEmployeeForm.dirty || newEmployeeForm.touched)" class="mat-error">
+      <div class="errors" *ngIf="newEmployeeForm.controls['FirstName'].errors?.['required']">*FirstName is required
+      </div>
+      <div class="errors" *ngIf="newEmployeeForm.controls['FirstName'].errors?.['pattern']">
+        *FirstName must be at least 3 character</div>
+    </div>
+
+    <input name="lastName" type="text" class="feedback-input" placeholder="Last Name" formControlName="LastName" />
+    <div *ngIf="newEmployeeForm.invalid && (newEmployeeForm.dirty || newEmployeeForm.touched)" class="mat-error">
+      <div class="errors" *ngIf="newEmployeeForm.controls['LastName'].errors?.['required']">*LastName is required
+      </div>
+      <div class="errors" *ngIf="newEmployeeForm.controls['LastName'].errors?.['pattern']">
+        *LastName must be at least 3 character</div>
+    </div>
+
+    <input name="email" type="email" class="feedback-input" placeholder="Email" formControlName="Email" />
+    <div *ngIf="newEmployeeForm.invalid && (newEmployeeForm.dirty || newEmployeeForm.touched)" class="mat-error">
+      <div class="errors" *ngIf="newEmployeeForm.controls['Email'].errors?.['required']">*Email is required</div>
+      <div class="errors" *ngIf="newEmployeeForm.controls['Email'].errors?.['pattern']">*Please enter a valid email
+        address</div>
+    </div>
+
+    <input name="Password" type="text" class="feedback-input" placeholder="Password" formControlName="Password" />
+    <div *ngIf="newEmployeeForm.invalid && (newEmployeeForm.dirty || newEmployeeForm.touched)" class="mat-error">
+      <div class="errors" *ngIf="newEmployeeForm.controls['Password'].errors?.['required']">*Password is required
+      </div>
+      <div class="errors" *ngIf="newEmployeeForm.controls['Password'].errors?.['pattern']">*The password must include
+        at least one English letter, one number and be at least 6 characters long</div>
+    </div>
+
+    <input name="experience" type="number" class="feedback-input" placeholder="Experience"
+      formControlName="Experience" />
+    <div *ngIf="newEmployeeForm.invalid && (newEmployeeForm.dirty || newEmployeeForm.touched)" class="mat-error">
+      <div class="errors" *ngIf="newEmployeeForm.controls['Experience'].errors?.['required']">*Experience is required
+      </div>
+      <div class="errors" *ngIf="newEmployeeForm.controls['Experience'].errors?.['pattern']">*Experience should be at
+        least 0</div>
+    </div>
+
+    <button type="submit" [disabled]="newEmployeeForm.invalid">Add</button>
+  </form>
+  <div class="errors" *ngIf="flagEmail">*Email exist</div>
+</div>

@@ -1,0 +1,23 @@
+<div>
+    <h1 style="text-align: center;">New Vacation:</h1>
+    <form [formGroup]="newVacationForm" (ngSubmit)="addNewVacation()">
+        <input name="fromDate" type="date" class="feedback-input" placeholder="From Date" formControlName="FromDate"/>
+        <div *ngIf="newVacationForm.invalid && (newVacationForm.dirty || newVacationForm.touched)" class="mat-error">
+            <div class="errors" *ngIf="newVacationForm.controls['FromDate'].errors?.['required']">*From Date is required</div>
+            <div class="errors"
+                *ngIf="newVacationForm.controls['FromDate'].errors?.['pattern']">
+                *Invalid Date</div>
+        </div>
+        <input name="toDate" type="date" class="feedback-input" placeholder="To Date" formControlName="ToDate" />
+        <div *ngIf="newVacationForm.invalid && (newVacationForm.dirty || newVacationForm.touched)" class="mat-error">
+            <div class="errors" *ngIf="newVacationForm.controls['ToDate'].errors?.['required']">*To Date is required</div>
+            <div class="errors"
+                *ngIf="newVacationForm.controls['ToDate'].errors?.['pattern']">
+                *Invalid Date</div>
+        </div>
+        <button type="submit" [disabled]="newVacationForm.invalid">Send To Add Vacation</button>
+    </form>
+</div>
+
+
+

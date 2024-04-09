@@ -1,0 +1,107 @@
+<mat-toolbar style="background-color: orange;">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()">
+
+        <mat-icon *ngIf="drawer; else elseMenu">menu</mat-icon>
+        <ng-template #elseMenu>
+            <mat-icon>logout</mat-icon>
+        </ng-template>
+
+    </button>
+    <h1 class="logo">
+        <'Task Manager />
+    </h1>
+    <span class="user"> Hi, {{currentName ||'User' }} :)</span>
+    <span class="example-spacer"></span>
+    <button alt="Log out" mat-icon-button class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+
+        <div *ngIf="this.currentEmp==0">
+            <button class="menu-button" (click)="createNewEmployee()">
+                <mat-icon class="menu-icon">person_add</mat-icon>
+                <span class="menu-label">Add New Employee</span>
+            </button>
+            <br>
+            <button class="menu-button" (click)="createNewTask()">
+                <mat-icon class="menu-icon">add_circle</mat-icon>
+                <span class="menu-label">Add New Task</span>
+            </button>
+            <br>
+        </div>
+
+
+
+
+        <button class="menu-button" (click)="showAllTasks()">
+            <mat-icon class="menu-icon">assignment</mat-icon>
+            <span class="menu-label">All Tasks</span>
+        </button>
+        <br>
+        <button class="menu-button" (click)="showReadyTasks()">
+            <mat-icon class="menu-icon">check_circle</mat-icon>
+            <span class="menu-label">Tasks Ready</span>
+        </button>
+        <br>
+        <button class="menu-button" (click)="showInProgressTasks()">
+            <mat-icon class="menu-icon">sync</mat-icon>
+            <span class="menu-label">Tasks In Progress</span>
+        </button>
+        <br>
+        <button class="menu-button" (click)="showNeedsReviewTasks()">
+            <mat-icon class="menu-icon">hourglass_empty</mat-icon>
+            <span class="menu-label">Tasks Needs Review</span>
+        </button>
+        <br>
+        <button class="menu-button" (click)="showDoneTasks()">
+            <mat-icon class="menu-icon">done_all</mat-icon>
+            <span class="menu-label">Tasks Done</span>
+        </button>
+        <br>
+
+        <div *ngIf="this.currentEmp==1">
+            <button class="menu-button" (click)="addVacation()">
+                <mat-icon class="menu-icon">sailing</mat-icon>
+                <span class="menu-label">Add New Vacation</span>
+            </button>
+            <br>
+        </div>
+
+        <div style="padding-bottom: 90px;"></div>
+
+        <hr>
+        <button class="menu-button" (click)="logout()">
+            <mat-icon class="menu-icon">logout</mat-icon>
+            <span class="menu-label">Log Out</span>
+        </button>
+    </mat-drawer>
+    <div>
+        <app-task [taskToApper]="taskToApper"></app-task>
+    </div>
+
+    <div class="div-container" *ngIf="this.currentEmp==1">
+        <button mat-fab class="add-vacation" (click)="addVacation()">
+            <mat-icon><span class="material-symbols-outlined">
+                    sailing
+                </span></mat-icon>
+        </button>
+    </div>
+
+    <div class="div-container" *ngIf="this.currentEmp==0">
+        <button mat-fab class="add-employee" (click)="createNewEmployee()">
+            <mat-icon>person_add</mat-icon>
+        </button>
+        <button mat-fab class="add-task" (click)="createNewTask()">
+            <span class="material-icons">add_task</span>
+        </button>
+    </div>
+
+    <!-- <app-add-employee *ngIf="addNewEmployee"></app-add-employee> -->
+    <!-- וכד להציג את חופשה ומשימה -->
+
+</mat-drawer-container>

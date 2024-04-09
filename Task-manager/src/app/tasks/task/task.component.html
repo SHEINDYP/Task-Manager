@@ -1,0 +1,68 @@
+<div class='app'>
+  <div id="all-task" *ngIf="taskToApper==-1">
+    <main class='project'>
+      <div class='project-info'>
+        <div class='project-participants'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class='project-tasks'>
+        <div class="project-column">
+          <div class='project-column-heading'>
+            <h2 class='project-column-heading__title'><img style="width: 20px;height: 20px;"
+                src="../../../assets/images/to-do-list.png">Task Ready</h2>
+          </div>
+          <div *ngFor="let t of taskReady">
+            <app-card [taskDetail]="t"></app-card>
+          </div>
+        </div>
+
+        <div class="project-column">
+          <div class='project-column-heading'>
+            <h2 class='project-column-heading__title'><img style="width: 20px;height: 20px;"
+                src="../../../assets/images/time.png">In Progress</h2>
+          </div>
+          <div *ngFor="let t of inProgress">
+            <app-card [taskDetail]="t"></app-card>
+          </div>
+        </div>
+
+        <div class="project-column">
+          <div class='project-column-heading'>
+            <h2 class='project-column-heading__title'><img style="width: 20px;height: 20px;"
+                src="../../../assets/images/check.png">Needs To Review</h2>
+          </div>
+          <div *ngFor="let t of needsReview">
+            <app-card [taskDetail]="t"></app-card>
+          </div>
+        </div>
+
+        <div class="project-column">
+          <div class='project-column-heading'>
+            <h2 class='project-column-heading__title'><img style="width: 20px;height: 20px;"
+                src="../../../assets/images/like.png">Done</h2>
+          </div>
+          <div *ngFor="let t of done">
+            <app-card [taskDetail]="t"></app-card>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class='app2'>
+  <div *ngIf="taskToApper !== -1">
+    <div *ngIf="getTaskByCategory()?.length !== 0; else elseTemplate">
+      <div *ngFor="let t of getTaskByCategory()">
+        <app-card [taskDetail]="t"></app-card>
+      </div>
+    </div>
+  </div>
+  <ng-template #elseTemplate>
+    <p class="no_task">you not have a task here 🤞</p>
+  </ng-template>
+</div>

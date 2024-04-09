@@ -1,0 +1,119 @@
+<div class="container">
+  <div class="forms-container">
+    <div class="signin-signup">
+      <form class="sign-up-form" [formGroup]="addNewManagerForm" action="#">
+        <h2 class="title">Sign up</h2>
+
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="First Name" formControlName="FirstName" />
+        </div>
+        <div *ngIf="addNewManagerForm.invalid && (addNewManagerForm.dirty || addNewManagerForm.touched)"
+          class="mat-error">
+          <div class="errors" *ngIf="addNewManagerForm.controls['FirstName'].errors?.['required']">*FirstName is
+            required
+          </div>
+          <div class="errors" *ngIf="addNewManagerForm.controls['FirstName'].errors?.['pattern']">
+            *FirstName must be at least 3 character</div>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Last Name" formControlName="LastName" />
+        </div>
+        <div *ngIf="addNewManagerForm.invalid && (addNewManagerForm.dirty || addNewManagerForm.touched)"
+          class="mat-error">
+          <div class="errors" *ngIf="addNewManagerForm.controls['LastName'].errors?.['required']">*LastName is required
+          </div>
+          <div class="errors" *ngIf="addNewManagerForm.controls['LastName'].errors?.['pattern']">
+            *LastName must be at least 3 character</div>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="number" placeholder="Experience" formControlName="Experience" />
+        </div>
+        <div *ngIf="addNewManagerForm.invalid && (addNewManagerForm.dirty || addNewManagerForm.touched)"
+          class="mat-error">
+          <div class="errors" *ngIf="addNewManagerForm.controls['Experience'].errors?.['required']">*Experience is
+            required
+          </div>
+          <div class="errors" *ngIf="addNewManagerForm.controls['Experience'].errors?.['pattern']">*Experience should be
+            at
+            least 0</div>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" formControlName="Email" />
+        </div>
+        <div *ngIf="addNewManagerForm.invalid && (addNewManagerForm.dirty || addNewManagerForm.touched)"
+          class="mat-error">
+          <div class="errors" *ngIf="addNewManagerForm.controls['Email'].errors?.['required']">*Email is required</div>
+          <div class="errors" *ngIf="addNewManagerForm.controls['Email'].errors?.['pattern']">*Please enter a valid
+            email
+            address</div>
+
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" formControlName="Password" />
+        </div>
+        <div *ngIf="addNewManagerForm.invalid && (addNewManagerForm.dirty || addNewManagerForm.touched)"
+          class="mat-error">
+          <div class="errors" *ngIf="addNewManagerForm.controls['Password'].errors?.['required']">*Password is required
+          </div>
+          <div class="errors" *ngIf="addNewManagerForm.controls['Password'].errors?.['pattern']">*The password must
+            include
+            at least one English letter, one number and be at least 6 characters long</div>
+        </div>
+
+        <button (click)="save_save()" class="btn">Sign up</button>
+        <p class="social-text">Or Sign up with social platforms</p>
+
+
+        <ul class="social-media">
+          <li>
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-google"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </form>
+      <div class="errors" *ngIf="flagEmail">*Email exist</div>
+    </div>
+  </div>
+
+  <div class="panels-container">
+    <div class="panel right-panel">
+      <div class="content">
+        <h3>One of Our Valued Members</h3>
+        <p>
+          Thank you for being part of our community. Your presence enriches our
+          shared experiences. Let's continue this journey together!
+
+        </p>
+        <button class="btn transparent" id="sign-in-btn" (click)="goToSignIn()">
+          Sign in
+        </button><br><br>
+      </div>
+      <img src="https://i.ibb.co/nP8H853/Mobile-login-rafiki.png" class="image" alt="" />
+    </div>
+  </div>
+</div>
